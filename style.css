@@ -5,12 +5,13 @@
 }
 
 header {
-    background-color: #6d6875;
     display: flex;
     justify-content: space-between;
+    background-color: #6d6875;
     position: sticky;
-    top: 0vw;
+    top: 0%;
     z-index: 1;
+    width: 100%;
 }
 
 nav {
@@ -22,7 +23,7 @@ nav a {
     font-family: "Major Mono Display", sans-serif;
     background-color: #000000;
     color: #ffffff;
-    padding: 15px;
+    padding: 10px;
     border-radius: 20px;
 }
 
@@ -34,7 +35,7 @@ nav a:hover {
 h1 {
     font: 40px "Major Mono Display", sans-serif;
     color: #ffffff;
-    margin-left: 50px;
+    margin-left: 30px;
 }
 
 h1:hover {
@@ -65,19 +66,18 @@ p, a {
 }
 
 #about, #projects {
-    padding: 10px;
-    margin-bottom: 15vh;
+    padding: 2%;
 }
 
 .about-text {
-    padding: 3vh;
+    padding: 2%;
+    text-align: center;
     line-height: 40px;
-    width: 55%;
 }
 
 .skills-container {
     display: flex;
-    float: right;
+    justify-content: center;
 }
 
 .skills {
@@ -92,30 +92,6 @@ p, a {
 
 .skills:hover {
     border: 2px #cc8b86 solid; 
-}
-
-.html {
-    position: relative;
-    bottom: 65vh;
-    left: 30vh;
-}
-
-.css {
-    position: relative;
-    bottom: 60vh;
-    left: 30vh;
-}
-
-.javascript {
-    position: relative;
-    bottom: 42vh;
-    left: -18vh;
-}
-
-.git {
-    position: relative;
-    bottom: 37vh;
-    right: 18vh;
 }
 
 .caption {
@@ -136,36 +112,45 @@ p, a {
 
 #projects p, h3 {
     line-height: 1.5;
-    margin-top: 0;
 }
 
 .video { 
     z-index: -1;
-    padding: 6vh;
-    width: 48.5%;
+    padding: 3%;
     background-color: #e5e5e5;
+    margin-bottom: 10vh;
 } 
 
 video {
     border: 1px #000000 solid;
+    width: 100%;
+    margin-bottom: 10%;
 }
 
-.projects-text {
-    display: flex;
-    flex-direction: column;
+.column {
     float: right;
     width: 50%;
-    position: relative;
-    top: 6vh;
+}
+
+.row:after {
+    content:"";
+    display: table;
+    clear: both;
 }
 
 .links {
     display: flex;
 }
 
+.projects-text {
+    padding: 5%;
+    margin-top: 2%;
+}
+
 #contact {
     display: flex;
     justify-content: center;
+    width: 100%;
     background: url("media/network.jpeg") no-repeat center center scroll;
     background-size: cover;
 }
