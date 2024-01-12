@@ -9,8 +9,6 @@ header {
     justify-content: space-between;
     background-color: #6d6875;
     position: sticky;
-    top: 0%;
-    z-index: 1;
     width: 100%;
 }
 
@@ -25,24 +23,24 @@ nav a {
     color: #ffffff;
     padding: 1.5%;
     display: inline-block;
-    border-radius: 15px;
+    border-radius: 1.5vw;
 }
 
 nav a:hover {
     text-transform: lowercase;
-    border: #9a8c98 solid 2px;
+    border: #9a8c98 solid 0.2vw;
 }
 
 h1 {
-    font: 40px "Major Mono Display", sans-serif;
+    font: 3vw "Major Mono Display", sans-serif;
     color: #ffffff;
-    margin-left: 30px;
+    margin-left: 3vw;
 }
 
 h1:hover {
     color: #000000;
     background-color: #9a8c98;
-    border-radius: 10px;
+    border-radius: 0.5vw;
     text-transform: lowercase;
 }
 
@@ -52,18 +50,18 @@ h2, h3, p, a, section button {
 }
 
 h2 {
-    font-size: 35px;
+    font-size: 2.6vw;
     text-align: center;
 }
 
 h3 {
-    font-size: 25px;
-    margin: 20px;
+    font-size: 1.9vw;
+    margin: 1.5vw;
 }
 
 p, a {
-    margin: 20px;
-    font-size: 20px;
+    margin: 1.5vw;
+    font-size: 1.5vw;
 }
 
 #about, #projects {
@@ -71,38 +69,40 @@ p, a {
 }
 
 .about-text {
-    padding: 2%;
-    line-height: 40px;
-    width: 50%;
-    text-align: justify;
+    padding: 0.5vw;
+    line-height: 2.5vw;
+    width: 75%;
+    margin-left: 12vw;
 }
 
 .skills-container {
     display: flex;
     justify-content: center;
-    padding: 6%;
 }
 
 .skills {
-    border: #000000 solid 2px;
+    border: #000000 solid 0.2vw;
     border-radius: 5%;
     margin: 1%;
-    padding-top: 3%;
     text-align: center;
-    width: 25%;
+    width: 10vw;
+    padding-top: 1%;
 }
 
 .skills:hover {
-    border: 2px #cc8b86 solid; 
+    border: #cc8b86 solid 0.2vw; 
+}
+
+.skills img {
+    max-width: 100%;
 }
 
 .caption {
-    font-size: 14px;
-    font-weight: bold;
+    font-size: 1vw;
 }
 
 #projects a {
-    padding: 10px;
+    padding: 0.75vw;
     color: #ffffff;
     background-color: #6d6875;
 }
@@ -113,7 +113,7 @@ p, a {
 }
 
 #projects p, h3 {
-    line-height: 1.5;
+    line-height: 2.5vw;
 }
 
 .video { 
@@ -124,7 +124,7 @@ p, a {
 } 
 
 video {
-    border: 1px #000000 solid;
+    border:#000000 solid  0.1vw;
     width: 100%;
     margin-bottom: 10%;
 }
@@ -159,10 +159,11 @@ video {
 
 .contact-links {
     background: #ffffff;
-    border: 2px #000000 solid;
-    border-radius: 20px;
-    margin: 10px;
-    padding: 5px;
+    border:#000000 solid 0.2vw;
+    border-radius: 2vw;
+    margin: 0.75vw;
+    padding: 0.5vw;
+    text-align: center;
 }
 
 #contact img:hover {
@@ -171,6 +172,6 @@ video {
 }
 
 footer p {
-    font-size: 12px;
+    font-size: 0.9vw;
     text-align: center;
 }
